@@ -1,11 +1,11 @@
 {
   "name": "create-react-typescript-webpack",
-  "version": "1.0.5",
+  "version": "1.0.10",
   "description": "",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "create-react-typescript-webpack": "bin/generate-app.js"
+    "create-react-typescript-webpack": "./bin/generate-app.mjs"
   },
   "scripts": {
     "prebuild": "eslint .",

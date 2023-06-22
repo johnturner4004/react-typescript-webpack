@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 /* eslint-disable spellcheck/spell-checker */
 
 import { promisify } from 'util'
@@ -40,7 +40,7 @@ const main = async () => {
   try {
     const gitSpinner = ora('Downloading files...').start()
     // clone the repo into the project folder -> creates the new boilerplate
-    await exec(`git clone --depth-1 ${gitRepo} ${projectPath} --quiet`)
+    await exec(`git clone --depth 1 ${gitRepo} ${projectPath} --quiet`)
     gitSpinner.succeed()
 
     const cleanSpinner = ora('Removing unused files...').start()
